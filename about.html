@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    </head>
+
+    <body>
+
+      <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src="logo.png"  width="40%"></a>
+          <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="course.html">Course</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showmenu()"></i>
+          </i>
+          
+        </nav>
+
+        <h1>About Us</h1>     
+
+      </section>
+
+      <!---About us content-->
+
+      <section class="about-us">
+
+        <div class="row">
+          <div class="about-col">
+               <h1>We are AFRA University</h1>
+               <p>At AFRA University, we provide quality education, equipping students with the skills to excel. With expert teachers and a supportive environment, we shape future leaders.</p>
+              <a href="" class="btn red-btn">EXPLORE NOW</a>
+          </div>
+          <div class="about-col">
+           <img src="myimage/about.jpg">    
+          </div>
+        </div>
+      </section>
+
+
+
+<!--FOOTER-->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Our university is committed to providing world-class education, fostering innovation, and shaping future leaders. With a diverse community of students and faculty, we offer a dynamic learning environment that empowers individuals to achieve academic and professional excellence. 🚀</p>
+  <div class="icons">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+  </div>
+  <p>Made With <i class="fas fa-heart"></i> Easy Tutorials</p> 
+</section>
+      <!------javascript for togglt menu------>
+      <script>
+          var navlinks = document.getElementById("navlinks");
+          function showmenu(){
+            navlinks.style.right = "0";
+          }
+
+          function hidemenu(){
+            navlinks.style.right = "-200px";
+          }
+      </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    </head>
+
+    <body>
+
+      <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src="logo.png"  width="40%"></a>
+          <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="course.html">Course</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showmenu()"></i>
+          </i>
+          
+        </nav>
+
+        <h1>Our Course</h1>     
+
+      </section>
+
+      <!---Course content-->
+
+
+      <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>our university offers various courses in different fields,including Science, Technology, Business, Arts, and Medicine. Students can pursue degrees in disciplines such as Computer Science, Engineering, Medicine, Law, Business Administration, Psychology, Education, and Agriculture. </p>
+
+        <diV class="row">
+          <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>The Intermediate level is designed for students who have completed basic education and are preparing for higher studies. It provides foundational knowledge in various subjects, helping students build essential skills before advancing to specialized degree programs.</p>
+          </div>
+          <div class="course-col">
+            <h3>Degree</h3>
+            <p>A Degree program offers in-depth academic and practical knowledge in a chosen field of study. It typically lasts between three to four years and prepares students for professional careers by providing specialized training, research opportunities, and industry exposure.</p>
+          </div>
+          <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Postgraduate studies are advanced programs for students who have completed a degree and wish to specialize further. These include master's degrees, diplomas, and doctoral programs, focusing on research, professional expertise, and career advancement in specific disciplines.</p>
+          </div>
+        </diV>
+      </section>
+
+      <!---Facilities-->
+
+      <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Our campus features modern classrooms, well-equipped laboratories, a digital library, comfortable hostels, sports centers, and serene study areas—all designed to support learning, innovation, and student well-being.</p>
+        <div class="row">
+          <div class="facilities-col">
+            <img src="myimage/library.png">
+            <h3>World Class Library</h3>
+            <p>Our digital library offers academic resources, research materials, e-books, and online databases to support student learning and research activities.</p>
+         </div>
+
+         <div class="facilities-col">
+          <img src="myimage/basketball.png">
+          <h3>Largest Play Ground</h3>
+          <p>Our sports facilities include a large playground, gymnasium, swimming pool, and court for various sports activities and competitions.</p>
+
+          </div>
+
+          <div class="facilities-col">
+            <img src="myimage/cafeteria.png">
+            <h3>Tasty and Heathy Food</h3>
+            <p>Our cafeteria offers a variety of delicious and nutritious meals, snacks, and beverages to keep students energies and focused throughout the day.</p>
+
+            </div>
+
+        </div>
+
+
+      </section>
+
+
+      
+
+
+
+<!--FOOTER-->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Our university is committed to providing world-class education, fostering innovation, and shaping future leaders. With a diverse community of students and faculty, we offer a dynamic learning environment that empowers individuals to achieve academic and professional excellence. 🚀</p>
+  <div class="icons">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+  </div>
+  <p>Made With <i class="fas fa-heart"></i> Easy Tutorials</p> 
+</section>
+      <!------javascript for togglt menu------>
+      <script>
+          var navlinks = document.getElementById("navlinks");
+          function showmenu(){
+            navlinks.style.right = "0";
+          }
+
+          function hidemenu(){
+            navlinks.style.right = "-200px";
+          }
+      </script>
+
+
+    </body>
+</html>
